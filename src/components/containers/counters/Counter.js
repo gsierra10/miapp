@@ -11,27 +11,12 @@ class Counter extends Component {
     render(){
         return (
             <div>
-                <Contador value={this.state.count}>
-    
-                </Contador>
-                <Button label="Add" onClick={()=>this.increment()}>
-                    
-                </Button>
+                <h1>{this.state.count}</h1>
+                <button onClick={()=>this.increment()}>add</button>
             </div>
         )
     }
 } 
-const Contador = props => {
-    return(
-      <div>
-        <h1>{props.value}</h1>
-      </div>
-    );
-};
-const Button = props => {
-    return (
-        <button onClick={()=>props.onClick()}> {props.label}</button>
-    );
-};
+
 export default Counter;
   
