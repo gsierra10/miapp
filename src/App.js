@@ -13,7 +13,7 @@ function App() {
       <Person name="Raul"  surname="Sanchez" age={29} />
       <Person name="Guille" surname="" age={29} />
 
-      <Counter />
+      <Counter/>
     </div>
   );
 }
